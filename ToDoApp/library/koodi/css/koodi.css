@@ -1,0 +1,89 @@
+.analpopup {
+	position: absolute;
+	width: 350px;
+	left: calc(50% - 175px);
+	height: 75%;
+	top: 5%;
+	background-color: rgba(8, 24, 30, 0.8);
+	z-index: 2;
+	transition: all .2s cubic-bezier(0.16, 1.02, 1, 1) 0s;
+	transform: translate(0,0) scale(0);
+	opacity: 1;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.viewscontainer {
+	position: absolute;
+	height: calc(100% - 131px);
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%;
+}
+
+.viewtab{
+	position: relative;
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+
+.tabscontainer {
+	position: relative;
+	height: 30px;
+}
+
+.tab {
+	position: relative;
+	float: left;
+	transition: cubic-bezier(.16,1.02,1,1);
+	transition-duration: 0.15s;
+	height: 32px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.tablabel{
+	font-size: 16px;
+	font-weight: lighter;
+	color: white;
+}
+
+.tabline {
+	position: absolute;
+	width: 113px;
+	height: 3px;
+	background: rgba(38, 148, 147, 1);
+	bottom: 0px;
+	transition: cubic-bezier(.16,1.02,1,1);
+	transition-duration: 0.15s;
+}
+
+.koodiinputcontainer {
+	position: relative;
+	width: 90%;
+	margin: 5%;
+	top: 10px;
+}
+
+.koodiinputlabel {
+	position: relative;
+	color: rgba(38, 148, 147, 1);
+	font-size: 12px;
+}
+
+.koodiinput {
+	width: 100%;
+	border-bottom: solid !important;
+	border-width: 1px !important;
+	height: 35px;
+	border-color: rgba(255, 255, 255, 0.76) !important;
+	color: white !important;
+	background: none;
+	border: none;
+}
+
+.input-focused{
+	border-color: rgba(38, 148, 147, 1) !important;
+}
